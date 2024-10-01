@@ -45,6 +45,7 @@ namespace PhotoAdjuster
                 while (Path.Exists(outputPath))
                 {
                     outputPath = Path.Combine(outputFolder, $"combined_{i / 4}_{counter}.jpg");
+                    counter++;
                 }
                 combinedImage.Save(outputPath, System.Drawing.Imaging.ImageFormat.Jpeg);
 

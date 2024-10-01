@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PhotoAdjuster": {
+      "commandName": "Project",
+      "commandLineArgs": "$(ProjectDir)\\bin\\$(Configuration)\\net8.0\\Input $(ProjectDir)\\bin\\$(Configuration)\\net8.0\\Output"
+    }
+  }
+}
