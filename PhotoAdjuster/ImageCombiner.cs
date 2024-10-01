@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace PhotoAdjuster
 {
@@ -38,6 +39,7 @@ namespace PhotoAdjuster
             {
                 // Set the interpolation mode for better quality
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                g.CompositingMode = CompositingMode.SourceCopy;
 
                 // Calculate the scaling factor
                 float scale = Math.Min(4000f / originalImage.Width, 3000f / originalImage.Height);
